@@ -1,3 +1,21 @@
-<div class="w-full p-10">
-	<h1>Soy la barra lateral</h1>
+---
+interface Props {
+	className?: string;
+}
+
+const { className } = Astro.props as Props;
+
+// Desde acá podrás hacer importaciones y modificaciones
+import IconContainer from "./IconContainer.astro";
+---
+
+<div class={className}>
+	<button class="btn btn-ghost btn-lg">BrainGuard Labs</button>
+	<div
+		class="grid grid-cols-1 h-full items-center justify-items-center overflow-y-hidden w-full">
+		<IconContainer> Relleno </IconContainer>
+		<IconContainer> Relleno </IconContainer>
+		<IconContainer> Relleno </IconContainer>
+		<IconContainer> Relleno </IconContainer>
+	</div>
 </div>

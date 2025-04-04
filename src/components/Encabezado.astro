@@ -1,1 +1,11 @@
-<h1>Es el encavezado</h1>
+---
+interface Props {
+	className?: string;
+}
+
+const { className } = Astro.props as Props;
+---
+
+<nav class={className}>
+	<h1>Soy el Encabezado</h1>
+</nav>

@@ -1,48 +1,49 @@
-# Astro Starter Kit: Basics
+# Mannual de instalación del proyecto
 
-```sh
-bun create astro@latest -- --template basics
+El proyecto usa Astro, pero en el frontend usa TailwindCSS, DaisyUI y React (React aún no ha sido instalado)
+
+## Manual de instalación:
+
+1. Clonar el repositorio: Para clonar el repositorio, nosotros tendremos que tener instalado el sistema de git en nuestro escritorio, luego de eso, tendremos que ejecutar el comando:
+
+```bash
+git clone https://github.com/techatlasdev/cerebral
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+2. Entrar a la carpeta del archivo clonado: Para movernos en la terminal con comandos, podemos usar el comando `cd`, así:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+cd cerebral
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. Instalar el administrador de paquetes: El administrador de paquetes nos permitirá gestionar el proyecto de manera optima, rápida y fácil, existen muchos tipos de administradores, por ejemplo:
+* NPM
+* PNPM
+* Bun
 
-## 🧞 Commands
+En este proyecto se usó Bun, pero puedes escoger el que quieras, si quieres usar bun, puedes visitar su web: https://bun.sh/
 
-All commands are run from the root of the project, from a terminal:
+4. Instalar las dependencias con tu administrador de paquetes: Las dependencias son herramientas externas que nosotros estamos incluyendo al repositorio para poder hacer que el desarrollo de nuestra aplicación sea más fácil, por lo tanto, para indicarle a nuestro gestor de paquetes que instale las dependencias, dependerá del administrador de paquetes que hemos instalado, por ejemplo:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+```bash
+bun install
+```
 
-## 👀 Want to learn more?
+```bash
+npm install
+```
+5. Iniciar el proyecto: Una vez las dependencias del proyecto estén instaladas, vamos a ejecutar el proyecto, el comando para hacerlo simplemente es con:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+bun run dev
+```
+
+```bash
+npm run dev
+```
+
+## Uso del proyecto
+
+Este proyecto por defecto se iniciará en el puerto 4321, es decir, si quieres ver el proyecto, puedes entrar a: http://localhost:4321
+
+Si quieres modificar el proyeccto, puedes entrar a la carpeta `src` para tener un contexto mas amplio de la organización del proyecto.
