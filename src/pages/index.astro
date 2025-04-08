@@ -1,21 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Barralateral from "../components/Barralateral.astro";
-import Parteprincipal from "../components/Parteprincipal.astro";
-import Encabezado from "../components/Encabezado.astro";
-import Body from "../components/Body.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<main class="h-screen flex flex-col-reverse lg:flex-row overflow-hidden">
-		<Parteprincipal className="flex flex-col w-full h-screen">
-			<Encabezado className="flex bg-base-200 py-5 px-5" />
-			<Body
-				className="flex flex-col items-center justify-center flex-1 py-5 px-5 gap-3"
-			/>
-			<Footer className="flex bg-base-200 py-5 px-5" />
-		</Parteprincipal>
-		<Barralateral className="flex-1 bg-base-300 px-2 py-5 w-full" />
+	<main class="w-screen h-screen flex flex-row">
+		<div class="hidden md:block w-full h-screen bg-base-200"></div>
+		<div
+			class="w-full h-screen flex flex-col items-center justify-center gap-4">
+			<h1 class="text-5xl font-bold">BrainGuard</h1>
+			<a href="/demo" class="btn btn-primary btn-xl">Iniciar</a>
+		</div>
 	</main>
 </Layout>
